@@ -1,0 +1,23 @@
+h1 {
+  color: aqua;
+}
+h2 {
+  color: green;
+}
+p {
+  color: violet;
+}
+p1 {
+  color: blue;
+}
+p3 {
+  color: red;
+}
+#paragraph1 {
+  font-size: 30px;
+  font-weight: strong;
+  color: brown;
+}
+div {
+  background-color: aqua;
+}
