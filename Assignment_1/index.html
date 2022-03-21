@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking App</title>
+    <h1>Roop Kumar Chatterjee</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h2>Welcome to hotel Booking Application</h2>
+    <header class="header" id="header">
+      <div class="head-top">
+      </div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Namashkar</label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Locations</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Feedback</a></li>
+            </ul>
+          </nav>
+              <div id="Div1" style="margin-top:100px">
+        <div class="book">
+        <form class="booking">
+            <div class="form-item">
+            <label for="Name">Name: </label>
+            <input type="text" id="Booking-Name" />
+            </div>
+            <div class="form-item">
+            <label for="email">Email: </label>
+            <input type="email" id="email" value="abc@gmail.com" />
+            </div>
+            <div class="form-item">
+            <label for="checkin-date">Check In Date: </label>
+            <input type="date" id="checkin-date" />
+            </div>
+            <div class="form-item">
+            <label for="checkout-date">Check Out Date: </label>
+            <input type="date" id="checkout-date" />
+            </div>
+            <div class="form-item">
+            <label for="adult">Adult: </label>
+            <input type="number" min="1" value="1" id="adult" />
+            </div>
+            <div class="form-item">
+            <label for="children">Children: </label>
+            <input type="number" min="0" value="0" id="children" />
+            </div>
+            <div class="form-item">
+            <label for="rooms">Rooms: </label>
+            <input type="number" min="1" value="1" id="rooms" />
+            </div>
+        </div>
+    </div>
+    </header>
+
+    </div>
+
+        <button type="button" id="btn-confirm">Confirm</button>
+        <button type="button" id="btn-cancel">Cancel</button>
+        <button type="button" id="btn-update">Update</button>
+        <button type="button" id="btn-pending">Pending</button>
+        <script type="text/javascript" async  src="script.js" defer></script>
+    </body>
+</html>

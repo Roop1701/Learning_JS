@@ -1,0 +1,247 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+}
+nav {
+  height: 80px;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: lightpink;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+h1 {
+  color: Red;
+  padding-top: 0rem;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  color: brown;
+  position: relative;
+  padding-top: 0.25rem;
+  text-align: center;
+}
+#btn-confirm {
+  background-color: aqua;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+#btn-update {
+  background-color: moccasin;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+#btn-pending {
+  background-color: yellow;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+      center/cover no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+}
+.book {
+  color: whitesmoke;
+  padding: 40px 60px;
+}
+.book-form {
+  display: grid;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.book-form input[type="submit"] {
+  margin: 18px 0 0 0;
+  background: var(--dark);
+  color: #fff;
+  border: 1px solid #fff;
+}
+.book-form label,
+.book-form input {
+  width: 100%;
+}
+.book-form label {
+  font-weight: 600;
+  word-spacing: 5px;
+  padding-bottom: 8px;
+}
+.book-form input:not(.btn) {
+  margin: 4px 0 16px 0;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 17px;
+  border: none;
+}
+.book-form input:focus {
+  outline: 0;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 768px) {
+  .book-form {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+  }
+}
+@media (min-width: 1170px) {
+  .book-form {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1370px) {
+  .book-form {
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 2fr;
+  }
+  .book {
+    height: 40vh;
+    display: grid;
+  }
+}
+@media (max-width: 500px) {
+  .book {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+#btn-cancel {
+  background-color: red;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  width: 150px;
+  display: block;
+  margin: 15px auto;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+img {
+  width: 100vw;
+  display: block;
+}
+@media (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
