@@ -1,0 +1,11 @@
+<script>
+  function message(greeting, callback) {
+    console.log(greeting);
+    callback();
+  }
+
+  function afterward() {
+    console.log("Good Day - Nice to see you in node");
+  }
+  message("Welcome to New Section", afterward);
+</script>
